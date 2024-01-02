@@ -24,23 +24,24 @@ Controller: Handles HTTP requests and calls the service layer.
 In the controller, a service class with an implementation class is used to achieve better separation of concerns.
 
 Project Structure
+```
 src
 |-- main
 |   |-- java
-|   |   `-- com.example
+|   |   -- com.example
 |   |       |-- controller
-|   |       |   `-- YourController.java
+|   |       |   -- TodoController.java
 |   |       |-- model
-|   |       |   `-- YourModel.java
+|   |       |   -- TodoModel.java
 |   |       |-- repository
-|   |       |   `-- YourRepository.java
+|   |       |   -- TodoRepository.java
 |   |       |-- service
-|   |       |   |-- YourService.java
-|   |       |   `-- YourServiceImpl.java
-|   |       `-- Application.java
-|   `-- resources
-|       `-- application.properties
-
+|   |       |   |-- TodoService.java
+|   |       |   -- TodoServiceImpl.java
+|   |       -- Application.java
+|   -- resources
+|       -- application.properties
+```
 
 Testing
 Testing is currently in progress. Stay tuned for updates.
