@@ -1,6 +1,7 @@
 # Spring Boot Application
 
-Bootstrapped application using [Spring Initializer](https://start.spring.io/).
+Bootstrapped application using [Spring Initializer](https://start.spring.io/) with a focus on separation of concerns using the repository pattern.
+
 - **Build tool:** Gradle
 - **Dependencies:** Web, API, Lombok, Spring Data JPA, and PostgreSQL Driver
 
@@ -14,7 +15,7 @@ spring.datasource.username=<Your Username>
 spring.datasource.password=<Your Password>
 ```
 
-Repository Pattern
+###Repository Pattern
 Implemented the repository pattern to separate the application into different layers:
 
 Repository: Responsible for handling data access logic.
@@ -23,7 +24,7 @@ Model: Defines the data entities.
 Controller: Handles HTTP requests and calls the service layer.
 In the controller, a service class with an implementation class is used to achieve better separation of concerns.
 
-Project Structure
+###Project Structure
 ```
 src
 |-- main
@@ -43,5 +44,18 @@ src
 |       -- application.properties
 ```
 
-Testing
+
+Build the Project
+```bash
+./gradlew build
+```
+
+Run the Application
+```bash
+./gradlew bootRun
+```
+
+The application will be accessible at http://localhost:8080.
+
+###Testing
 Testing is currently in progress. Stay tuned for updates.
